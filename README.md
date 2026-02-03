@@ -23,7 +23,7 @@ The application is decoupled into two primary logic loops: **Knowledge Ingestion
 
 ### 2. The Inference Loop (RAG)
 * **Semantic Search:** User queries are vectorized and compared against the vector store using Cosine Similarity.
-* **Augmentation:** The top 8 most relevant context chunks are injected into a specialized system prompt.
+* **Augmentation:** The top 8(k = 8) most relevant context chunks are injected into a specialized system prompt.
 * **Generation:** Groq-hosted LLaMA 3.1 synthesizes a response strictly based on the provided context.
 
 ---
