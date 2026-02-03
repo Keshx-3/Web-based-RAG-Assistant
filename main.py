@@ -78,7 +78,7 @@ with st.sidebar:
 
     st.markdown("---")
     
-    if st.button("🚀 Process URLs", type="primary", use_container_width=True):
+    if st.button("Process URLs", type="primary", use_container_width=True):
         if not valid_urls:
             st.error("❌ Please enter valid URLs.")
         else:
@@ -101,7 +101,7 @@ with st.sidebar:
             except Exception as e:
                 st.error(f"Error: {e}")
 
-    if st.button("🔄 Reset App", use_container_width=True):
+    if st.button("Reset App", use_container_width=True):
         st.session_state.urls_processed = False
         st.session_state.last_urls = []
         st.session_state.messages = []
