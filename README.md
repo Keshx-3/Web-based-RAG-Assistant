@@ -26,6 +26,8 @@ The application is decoupled into two primary logic loops: **Knowledge Ingestion
 * **Augmentation:** The top 8(k = 8) most relevant context chunks are injected into a specialized system prompt.
 * **Generation:** Groq-hosted LLaMA 3.1 synthesizes a response strictly based on the provided context.
 
+  <img width="2097" height="641" alt="Untitled design (4)" src="https://github.com/user-attachments/assets/d9951ef8-9d37-4e84-8bc9-017e5ff58427" />
+
 ---
 
 ## 🌟 Key Features
